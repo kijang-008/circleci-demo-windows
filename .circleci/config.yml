@@ -16,7 +16,7 @@ jobs:
       - run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
       - run: tar xf ngrok.zip
       - run: Copy ngrok.exe C:\Windows\System32
-      - run: cmd /c echo ./ngrok.exe authtoken "1s7wE6oHFdRADK5w780GUiEwNZ5_4EHuKKRE29PESYAxxEVqJ" >a.ps1
+      - run: cmd /c echo ./ngrok.exe authtoken "1tx39iScPrzB7FitNnVW7LsPv4D_4Jb4wQj5dABMrAKT1V81P" >a.ps1
       - run: cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
       - run: cmd /c echo ping -n 999999 10.10.10.10 >>a.ps1
       - run: .\a.ps1
